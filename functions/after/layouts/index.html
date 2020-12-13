@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {{.Title}}
+    </title>
+</head>
+
+<body>
+    {{.Content}}
+    <br>
+    <h2> Simple Example </h2>
+    {{ $data := slice "one" "two" "three" "four" }}
+    <ul>
+    {{ range after 2 $data }}
+    <li>{{ . }}</li>
+    {{ end }}
+    </ul>
+</body>
+
+</html>
