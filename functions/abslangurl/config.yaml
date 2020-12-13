@@ -1,0 +1,9 @@
+baseURL: https://example.com/hugo
+
+defaultContentLanguage: es
+
+languages: 
+  es: 
+    LanguageName: Español
+  en:
+    LanguageName: English

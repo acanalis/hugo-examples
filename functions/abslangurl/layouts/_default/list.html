@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>
+    {{.Title}}
+  </title>
+  <nav>
+    <a href="{{ absLangURL "blog/" }}"> Absolute link to Blog of the current language</a>
+    <br>
+    <a href="{{ relLangURL "blog/" }}"> Relative link to Blog of the current language</a>
+  </nav>
+</head>
+
+<body>
+  {{.Content}}
+</body>
+
+</html>
