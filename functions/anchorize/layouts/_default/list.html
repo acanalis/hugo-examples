@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>
+    {{.Title}}
+  </title>
+  <style>
+    a {
+      display: block;
+    }
+    body{
+      min-height: 2000px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1> Simple Use </h1>
+  <pre>
+  {{anchorize "This is a header"}}
+  {{anchorize "This is also          a header"}}
+  {{anchorize "main.go"}}
+  {{anchorize "Article 123"}} 
+  {{anchorize "<- Let's try this, shall we?"}}
+  {{anchorize "Hello, 世界"}}
+  </pre>
+
+  <h2> Using headers as anchors </h2>
+  <a href="#{{anchorize "This is a header"}}"> Jump to "This is header" </a>
+  <a href="#{{anchorize "This is also          a header"}}"> Jump to "This is also          a header" </a>
+  <a href="#{{anchorize "main.go"}}"> Jump to "main.go"</a>
+  <a href="#{{anchorize "Article 123"}}"> Jump to "Article 123"</a>
+  <a href="#{{anchorize "<- Let's try this, shall we?"}}"> Jump to "<- Let's try this, shall we?"</a>
+  <a href="#{{anchorize  "Hello, 世界"}}"> Jump to "Hello, 世界"</a>
+
+  {{.Content}}
+</body>
+
+</html>
