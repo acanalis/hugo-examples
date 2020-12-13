@@ -1,6 +1,6 @@
 # after
 
-[Original Docs Article](https://gohugo.io/functions/anchorize/)
+[Original Docs Article](https://gohugo.io/functions/after/)
 
 To follow this example:
 1. View `layouts/index`

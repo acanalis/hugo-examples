@@ -1,6 +1,6 @@
 # abslangurl
 
-[Original Docs Article](https://gohugo.io/functions/absurl/)
+[Original Docs Article](https://gohugo.io/functions/anchorize/)
 
 To follow this example:
 1. Run `hugo` on this folder.
