@@ -1,4 +1,4 @@
-# abslangurl
+# anchorize
 
 [Original Docs Article](https://gohugo.io/functions/anchorize/)
 

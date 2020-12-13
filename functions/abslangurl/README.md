@@ -1,5 +1,4 @@
-# abslangurl
-
+# absLangURL
 [Original Docs Article](https://gohugo.io/functions/abslangurl/)
 
 To follow this example:
