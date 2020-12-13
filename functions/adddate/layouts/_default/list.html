@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>
+    {{.Title}}
+  </title>
+  <style>
+    .item {
+      border: black 1px solid;
+      margin: 10px
+    }
+  </style>
+</head>
+
+<body>
+  {{.Content}}
+  <h2> Tweets from the last 2 years </h2>
+  {{ partial "templates/random-tweets.html" . }}
+</body>
+
+</html>
