@@ -1,5 +1,7 @@
 # hugo-examples
 
+[ Note: Under Construction ]
+
 A repository of Hugo examples as shown in the Hugo Docs, so that you can run them yourself. Not maintained by the Hugo Team.
 
 ## Get Started 
