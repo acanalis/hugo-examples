@@ -1,11 +1,13 @@
 # after
 
-[Original Docs Article](https://gohugo.io/functions/after/)
+[Original Hugo Docs Article](https://gohugo.io/functions/after/)
 
 To follow this example:
-1. View `layouts/index`
+1. Read `layouts/index`
 2. Run `hugo`
-3. View `public/index.html`
+3. Read `public/index.html`
+4. Read `layouts/section/articles.html`
+5. Read `public/articles/index.html`
 
 ## Notes
 

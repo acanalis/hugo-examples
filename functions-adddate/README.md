@@ -1,12 +1,13 @@
 # .AddDate
 
-[Original Docs Article](https://gohugo.io/functions/adddate/)
+[Original Hugo Docs Article](https://gohugo.io/functions/adddate/)
 
 To follow this example:
-1. Run `hugo` on this folder.
-2. View `data/tweets.toml`
-3. View `layouts/random-tweets.html`.
-4. View `public/index.html`.
+1. Read `data/tweets.toml`
+2. Read `layouts/partials/templates/random-tweets.html`.
+3. Read `layouts/_default/list.html`
+4. Run `hugo` on this folder.
+5. Read `public/index.html`.
 
 ## Differences to the Docs version
 

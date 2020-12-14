@@ -1,6 +1,6 @@
 # shortcode-templates
 
-[Original Docs Article](https://gohugo.io/templates/shortcode-templates/)
+[Original Hugo Docs Article](https://gohugo.io/templates/shortcode-templates/)
 
 To follow this example:
 1. View `content/_index.md`

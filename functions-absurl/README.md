@@ -1,11 +1,11 @@
 # absURL
 
-[Original Docs Article](https://gohugo.io/functions/absurl/)
+[Original Hugo Docs Article](https://gohugo.io/functions/absurl/)
 
 To follow this example:
-1. Run `hugo` on this folder.
-2. View `layouts/list.html`.
-3. View `public/index.html`.
+1. Read `layouts/_default/list.html`.
+2. Run `hugo` on this folder.
+3. Read `public/index.html`.
 
 ## Differences to the Docs version
 

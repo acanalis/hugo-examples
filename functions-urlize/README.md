@@ -1,11 +1,13 @@
 # urlize
 
-[Original Docs Article](https://gohugo.io/functions/urlize/)
+[Original Hugo Docs Article](https://gohugo.io/functions/urlize/)
 
 To follow this example:
-1. Run `hugo` on this folder.
-2. View `layouts/list.html`.
-3. View `public/blog/index.html`.
+1. Read `content/blog/greatest-city.md`
+2. Read `layouts/partials/content-header.html`
+3. Read `layouts/blog/single.html`.
+4. Run `hugo` on this folder.
+5. Read `public/blog/greatest-city/index.html`.
 
 ## Differences to the Docs version
 
