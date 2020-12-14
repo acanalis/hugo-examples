@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      {{ .Title }}
+    </title>
+  </head>
+  <body>
+    {{ block "main" . }}
+    {{ end }}
+  </body>
+
+  <footer>
+    <hr>
+    <h3> List of all Pages under the current Page</h3>
+    <ol>
+      {{ range .Pages }}
+      <li>
+        <a href="{{.RelPermalink}}">{{.Title}}</a>
+      </li>
+      {{ end }}
+    </ol>
+  </footer>
+</html>
