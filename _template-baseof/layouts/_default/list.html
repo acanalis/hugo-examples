@@ -6,9 +6,7 @@
 <ol>
   {{ range .Pages }}
   <li>
-    <a href="{{.RelPermalink}}">
-      <h2>{{.Title}}</h2>
-    </a>
+    <a href="{{.RelPermalink}}">{{.Title}}</a>
   </li>
   {{ end }}
 </ol>
