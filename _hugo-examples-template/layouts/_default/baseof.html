@@ -6,15 +6,20 @@
     <title>
       {{ .Title }}
     </title>
+    {{ block "head" . }}
+    {{ end }}
   </head>
   <body>
-    {{ block "main" . }}
+    {{ block "body" . }}
     {{ end }}
   </body>
 
   <footer>
+    <!-- This footer improves the navigation. For the purposes of understanding 
+    the example, it can be safely ignored -->
     <hr>
-    <h3> List of all Pages under the current Page</h3>
+    {{if .IsNode}}
+    <h3> List of Pages under the current list</h3>
     <ol>
       {{ range .Pages }}
       <li>
@@ -22,5 +27,10 @@
       </li>
       {{ end }}
     </ol>
+    {{ end }}
+
+    {{ if not .IsHome}}
+    <h3><a href="{{ .Site.Home.Permalink }}">Back to Home</a></h3>
+    {{ end}}
   </footer>
 </html>
