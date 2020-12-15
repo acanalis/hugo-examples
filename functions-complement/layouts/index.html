@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {{.Title}}
+    </title>
+</head>
+
+<body>
+    {{.Content}}
+    <br>
+    {{ $pages := .Site.RegularPages | first 15 }}
+    {{ $news := where $pages "Type" "news" | first 3 }}
+    {{ $blog := where $pages "Type" "blog" | first 3 }}
+    {{ $other := $pages | complement $news $blog }}
+
+    <h3> Recent News </h3>
+    {{ range $news}}
+    <a href="{{.Permalink}}">{{.Title }}</a><br>
+    {{ end}}
+
+    <h3> Recent Blogs </h3>
+    {{ range $blog}}
+    <a href="{{.Permalink}}">{{.Title }}</a><br>
+    {{ end}}
+
+    <h3> Other interesting stuff </h3>
+    {{ range $other}}
+    <a href="{{.Permalink}}">{{.Title }}</a><br>
+    {{ end}}
+</body>
+
+</html>
