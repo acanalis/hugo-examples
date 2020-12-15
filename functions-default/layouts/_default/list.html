@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>
+    {{.Title}}
+  </title>
+</head>
+
+<body>
+  <h2> Simple Use</h2>
+  {{ index .Params "font" | default "Roboto" }}
+  {{ default "Roboto" (index .Params "font") }}
+
+  <h2> Variable as default value</h2>
+  {{$old := .Params.oldparam }}
+  <p>{{ .Params.newparam | default $old }}</p>
+
+  <h2> Dot notation default value </h2>
+  <p> The title is {{ .Params.seo_title | default .Title }}</p>
+
+</body>
+
+</html>
