@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {{.Title}}
+    </title>
+</head>
+
+<body>
+    <h2> With Front Matter params </h2>
+    <p>Tags: {{ delimit .Params.tags ", " }}</p>
+
+    <h2> With optional last argument </h2>
+    <p>Tags: {{ delimit .Params.tags ", " ", and " }}</p>
+</body>
+
+</html>
