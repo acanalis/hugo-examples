@@ -2,13 +2,6 @@
 
 [Original Hugo Docs Article](https://gohugo.io/functions/urlize/)
 
-To follow this example:
-1. Read `content/blog/greatest-city.md`
-2. Read `layouts/partials/content-header.html`
-3. Read `layouts/blog/single.html`.
-4. Run `hugo` on this folder.
-5. Read `public/blog/greatest-city/index.html`.
-
 ## Differences to the Docs version
 
 * The original was `{{ . | urlize }}` , but it was changed to `{{ urlize . }}` to match the function signature.

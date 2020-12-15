@@ -2,13 +2,6 @@
 
 [Original Hugo Docs Article](https://gohugo.io/functions/adddate/)
 
-To follow this example:
-1. Read `data/tweets.toml`
-2. Read `layouts/partials/templates/random-tweets.html`.
-3. Read `layouts/_default/list.html`
-4. Run `hugo` on this folder.
-5. Read `public/index.html`.
-
 ## Differences to the Docs version
 
 The original version didn't work, because the "date" field on each tweet is a string, and `now` is of type time.Time. That mismatch cause all the tweets to be missed. To solve it, `now.AddDate -2 0 0` was formated into a string before the comparison.
