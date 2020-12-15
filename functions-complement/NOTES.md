@@ -1,6 +1,6 @@
 # functions-complement
 
-[Original Hugo Docs Article](https://gohugo.io/functions/after/)
+[Original Hugo Docs Article](https://gohugo.io/functions/complement/)
 
 ## Differences to the Docs version
 
