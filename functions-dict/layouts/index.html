@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {{.Title}}
+    </title>
+</head>
+
+<body>
+    {{ $d := dict "fill" "#01589B" "width" 100 "height" 150 }}
+    {{ partial "svg/external-links.svg" $d }}
+</body>
+
+</html>
