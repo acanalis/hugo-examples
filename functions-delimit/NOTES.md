@@ -4,7 +4,7 @@
 
 ## Differences with the Docs version
 
-* The `+++` was changed to `---`
+* Conversion to yaml.
 
 ## Notes
 

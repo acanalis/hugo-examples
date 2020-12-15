@@ -1,7 +1,7 @@
-+++
-title = "My Website"
-names = [ "Derek Perkins", "Joe Bergevin", "Tanner Linsley" ]
-+++
+---
+title : My Website
+names : [ Derek Perkins, Joe Bergevin, Tanner Linsley ]
+---
 
 ## Welcome to my Website
 

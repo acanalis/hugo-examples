@@ -28,5 +28,6 @@ hugo
 
 * The top level folders are valid Hugo folders (you can run `hugo` or `hugo server` in them).
 * The aim is to implement all the examples from [this folder](https://github.com/gohugoio/hugoDocs/tree/master/content/en) of the Hugo Docs.
-* The implementation is as true as possible to the original, except inconsistencies or bugs.
-* The implementation is as minimal as possible. 
+* The implementation is as true as possible to the original.
+* The implementation is as minimal as possible.
+* For consistency all the configurations and front matter parameter were converted to `.yaml`.  

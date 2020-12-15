@@ -1,8 +1,8 @@
-+++
-title = "The World's Greatest City"
-location = "Chicago IL"
-tags = ["pizza","beer","hot dogs"]
-+++
+---
+title : The World's Greatest City
+location : Chicago IL
+tags : [pizza, beer, hot dogs]
+---
 
 ## A pizza to remember
 
