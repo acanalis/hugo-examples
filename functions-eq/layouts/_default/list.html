@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ .Content }}
+
+{{ if eq .Section "blog" }} The current section is "blog" {{ end }}
+
+<h2> List of Pages under the current list</h2>
+<ol>
+    {{ range .Pages }}
+    <li>
+        <a href="{{.RelPermalink}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+</ol>
+{{ end }}
