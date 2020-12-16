@@ -37,3 +37,13 @@ The year is {{< year >}}.
   {{< img2 src="/media/two.png" >}}
 {{< /gallery >}}
 {{< img2 src="/media/three.png" >}}
+
+## Inline Shortcode
+
+### Definition + use
+
+{{< time.inline >}}{{ now }}{{< /time.inline >}}
+
+### Reuse
+
+{{< time.inline />}}

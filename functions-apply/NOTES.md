@@ -9,7 +9,7 @@
 
 # Notes
 
-* The examples shows a relatively bad practice of url-building by joining the different parts. There are be better alternatives.
+* Url-building. The taxonomies URLs are built by joining strings. If the taxonomies are rendered on a different part of the site via the "permalink" config option, the links will break. Right now, there's no better option.
 * The simple example could be related to the first one, for consistency. 
 * The pipe in urlize could avoided.
 * This example is very similar to the urlize example. They should both be minimal and independent.

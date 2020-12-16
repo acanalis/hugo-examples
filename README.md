@@ -31,3 +31,8 @@ hugo
 * The implementation is as true as possible to the original.
 * The implementation is as minimal as possible.
 * For consistency all the configurations and front matter parameter were converted to `.yaml`.  
+* To keep the examples minimal, this warning is considered acceptable:
+    > WARN 2020/12/15 20:21:41 found no layout file for "HTML" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+    
+    To solve it, add a `layouts/_default/list.html`. 
+

@@ -4,7 +4,7 @@
 
 ## Differences to the Docs version
 
-The original version didn't work, because the "date" field on each tweet is a string, and `now` is of type time.Time. That mismatch cause all the tweets to be missed. To solve it, `now.AddDate -2 0 0` was formated into a string before the comparison.
+The original version didn't work (bug), because the "date" field on each tweet is a string, and `now` is of type time.Time. That mismatch cause all the tweets to be missed. To solve it, `now.AddDate -2 0 0` was formated into a string before the comparison.
 
 Original was 
 ```
