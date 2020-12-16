@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>
-      {{ .Title }}
-    </title>
-    {{ block "head" . }}
-    {{ end }}
-  </head>
-  <body>
-    {{ block "body" . }}
-    {{ end }}
-  </body>
 
-  <footer>
-    <!-- This footer improves the navigation. For the purposes of understanding 
-    the example, it can be safely ignored -->
-    <hr>
-    {{if .IsNode}}
-    <h3> List of Pages under the current list</h3>
-    <ol>
-      {{ range .Pages }}
-      <li>
-        <a href="{{.RelPermalink}}">{{.Title}}</a>
-      </li>
-      {{ end }}
-    </ol>
-    {{ end }}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>
+    {{ .Title }}
+  </title>
+  {{ block "head" . }}
+  {{ end }}
+</head>
 
-    {{ if not .IsHome}}
-    <h3><a href="{{ .Site.Home.Permalink }}">Back to Home</a></h3>
-    {{ end}}
-  </footer>
+<body>
+  {{ block "main" . }}
+  {{ end }}
+</body>
+
+<footer>
+  <h3><a href="{{ .Site.Home.Permalink }}">Back to Home</a></h3>
+</footer>
+
 </html>
