@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {{ .Title }}
+    </title>
+</head>
+
+<body>
+    {{ if (fileExists "static/img/banner.jpg") }}
+    <img src="{{ "img/banner.jpg" | absURL }}" />
+    {{ end }}
+
+    {{ if (fileExists "static/img/nonexistent.jpg") }}
+    <img src="{{ "img/nonexistent.jpg" | absURL }}" />
+    {{ end }}
+</body>
+
+</html>
