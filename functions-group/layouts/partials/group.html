@@ -1,0 +1,14 @@
+{{ $new := .Site.RegularPages | first 3 | group "New" }}
+{{ $old := .Site.RegularPages | last 3 | group "Old" }}
+{{ $groups := slice $new $old }}
+{{ range $groups }}
+<h3>{{ .Key }}{{/* Prints "New", "Old" */}}</h3>
+<ul>
+    {{ range .Pages }}
+    <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
