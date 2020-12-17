@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {{ hugo.Generator }}
+    <title>
+        {{ .Title }}
+    </title>
+</head>
+
+<body>
+    <p>hugo.Generator</p>
+    {{ hugo.Generator }}
+    <p>hugo.Version</p>
+    {{ hugo.Version }}
+    <p>hugo.Environment</p>
+    {{ hugo.Environment }}
+    <p>hugo.CommitHash</p>
+    {{ hugo.CommitHash }}
+    <p>hugo.BuildDate</p>
+    {{ hugo.BuildDate }}
+    <p>hugo.IsProduction</p>
+    {{ hugo.IsProduction}}
+</body>
+
+</html>
