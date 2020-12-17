@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+{{ range first 5 .Pages }}
+    {{ .Render "summary" }}
+{{ end }}
+
+{{ end }}
