@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {{ .Title }}
+    </title>
+</head>
+
+<body>
+    <h1> {{.Title}} </h1>
+    <h2>Load Data from a Path Based on Front Matter Params</h2>
+
+    {{ index .Site.Data.locations "oslo" }}
+
+    {{ index .Site.Data.locations .Params.location }}
+
+    {{ (index .Site.Data.locations .Params.location).pop_city }}
+</body>
+
+</html>
