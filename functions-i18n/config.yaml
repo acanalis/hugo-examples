@@ -1,0 +1,9 @@
+defaultContentLanguage: en-gb
+
+defaultContentLanguageInSubdir: true
+
+languages:
+  en-gb: 
+    languageName: UK English
+  en-us: 
+    languageName: US English
