@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {{ .Title }}
+    </title>
+    <style>
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    {{ $img := resources.Get "img/elephants.jpg" }}
+
+    <h2> Original Image </h2>
+    <img src="{{ $img.RelPermalink }}">
+    {{ partial "attribution.html" . }}
+
+    <h2> Brightness </h2>
+    {{ $brightness := $img | images.Filter (images.Brightness 50) }}
+    <img src="{{ $brightness.RelPermalink }}">
+
+    <h2> Color Balance </h2>
+    {{ $colorbalance := $img | images.Filter (images.ColorBalance 200 0 -100) }}
+    <img src="{{ $colorbalance.RelPermalink }}">
+
+    <h2> Colorize </h2>
+    {{ $colorize := $img | images.Filter (images.Colorize 270 50 50) }}
+    <img src="{{ $colorize.RelPermalink }}">
+
+    <h2> Contrast </h2>
+    {{ $contrast := $img | images.Filter (images.Contrast 70) }}
+    <img src="{{ $contrast.RelPermalink }}">
+
+    <h2> Gamma </h2>
+    {{ $gamma := $img | images.Filter (images.Gamma 3) }}
+    <img src="{{ $gamma.RelPermalink }}">
+
+    <h2> Gaussian Blur </h2>
+    {{ $gaussianblur := $img | images.Filter (images.GaussianBlur 6) }}
+    <img src="{{ $gaussianblur.RelPermalink }}">
+
+    <h2> Grayscale </h2>
+    {{ $grayscale := $img | images.Filter (images.Grayscale) }}
+    <img src="{{ $grayscale.RelPermalink }}">
+
+    <h2> Hue </h2>
+    {{ $hue := $img | images.Filter (images.Hue 60) }}
+    <img src="{{ $hue.RelPermalink }}">
+
+    <h2> Invert </h2>
+    {{ $invert := $img | images.Filter (images.Invert) }}
+    <img src="{{ $invert.RelPermalink }}">
+
+    <h2> Pixelate </h2>
+    {{ $pixelate := $img | images.Filter (images.Pixelate 8) }}
+    <img src="{{ $pixelate.RelPermalink }}">
+
+    <h2> Saturation </h2>
+    {{ $saturation := $img | images.Filter (images.Saturation 1000)}}
+    <img src="{{ $saturation.RelPermalink }}">
+
+    <h2> Sepia </h2>
+    {{ $sepia := $img | images.Filter (images.Sepia 40)}}
+    <img src="{{ $sepia.RelPermalink }}">
+
+    <h2> Sigmoid </h2>
+    {{ $sigmoid := $img | images.Filter (images.Sigmoid 20 4)}}
+    <img src="{{ $sigmoid.RelPermalink }}">
+
+    <h2> UnsharpMask </h2>
+    {{ $unsharpmask := $img | images.Filter (images.UnsharpMask 20 0.7 0.03)}}
+    <img src="{{ $unsharpmask.RelPermalink }}">
+</body>
+
+</html>
